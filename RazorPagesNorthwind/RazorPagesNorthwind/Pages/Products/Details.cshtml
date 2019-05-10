@@ -1,0 +1,73 @@
+﻿@page
+@model RazorPagesNorthwind.Pages.Products.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.ProductName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.ProductName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.SupplierID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.SupplierID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.CategoryID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.CategoryID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.QuantityPerUnit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.QuantityPerUnit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.UnitPrice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.UnitPrice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.UnitsInStock)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.UnitsInStock)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.UnitsOnOrder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.UnitsOnOrder)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.ReorderLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.ReorderLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.Discontinued)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Product.Discontinued)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Product.ProductID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
